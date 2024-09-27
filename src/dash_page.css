@@ -1,0 +1,190 @@
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.landing-page {
+  font-family: 'Arial', sans-serif;
+  color: #e94560;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #16213e;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: #533483;
+  font-size: 2.5em;
+  border-bottom: 2px solid #533483;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  width: 100%;
+  background-color:#16213e; /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 1000; /* Ensure it stays on top */
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin: 0 10px;
+}
+
+.main-nav button {
+  background-color: #533483;
+  color: white;
+  border: 2px solid #e94560;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.main-nav button:hover {
+  background-color: #e94560;
+}
+
+/* Ensure content is not hidden behind the fixed navbar */
+.landing-page {
+  padding-top: 120px; /* Adjust based on navbar height */
+}
+
+/* Introduction Section */
+.intro {
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.intro h2 {
+  font-family: 'Playfair Display', serif;
+  color: #e94560;
+  border-bottom: 2px solid #533483;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Live Analytics Section */
+.live-analytics {
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background-color: #0f3460;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.live-analytics h2 {
+  color: #e94560;
+  border-bottom: 2px solid #533483;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #e94560;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Kenya Potential Section */
+.kenya-potential {
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.kenya-potential h2 {
+  color: #e94560;
+  border-bottom: 2px solid #533483;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.kenya-potential p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #533483;
+  color: #ecf0f1;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
+  .live-analytics, .intro, .kenya-potential {
+    padding: 20px;
+  }
+}

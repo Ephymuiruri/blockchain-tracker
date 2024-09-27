@@ -1,0 +1,78 @@
+/* About Page Specific Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+main.main-content {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-section, .project-section, .builder-section {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #44318d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p, .project-section p, .builder-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Developer Card */
+.builder-section .developer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.builder-section .developer-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.builder-section .developer-card h3 {
+    color: #44318d;
+    margin-bottom: 10px;
+}
+
+.builder-section .developer-card p {
+    color: #666;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #44318d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .developer-card {
+        width: 100%;
+    }
+}
+#graph{
+    font-size: 1.1em;
+}

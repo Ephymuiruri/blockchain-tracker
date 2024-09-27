@@ -1,0 +1,165 @@
+.transfers-grid {
+  padding: 20px;
+  background-color: #1a1a2e;
+  min-height: 100vh;
+}
+
+.grid-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e94560;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  position: relative;
+}
+
+.transaction-card {
+  background-color: #16213e;
+  border-radius: 8px;
+  overflow: hidden; /* Hides content overflow */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform-origin: center;
+  z-index: 0;
+}
+
+.transaction-card:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  z-index: 10; /* Hover above other cards */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
+
+.grid-container:hover .transaction-card:not(:hover) {
+  transform: scale(1.0);
+  opacity: 0.8;
+}
+
+.card-header, .transaction-card > div:first-child {
+  background-color: #0f3460;
+  padding: 1rem;
+}
+
+.card-header h3, .transaction-card > div:first-child h3 {
+  color: #e94560;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-content, .transaction-card > div:last-child {
+  padding: 1rem;
+}
+
+.transaction-detail {
+  color: #e94560;
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden;    /* Hides overflow */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflowed text */
+}
+
+.transaction-detail strong {
+  color: #533483;
+}
+
+/* Loading and error styling */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(22, 33, 62, 0.8); /* Semi-transparent background */
+  z-index: 9999; /* Ensure it's on top */
+}
+.loading, .error {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #e94560;
+}
+
+.spinner {
+  border: 8px solid #ee798d; /* Light grey */
+  border-top: 8px solid #e7314f; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+.transaction-card:hover div.button-area{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #16213e;
+  color: white;
+}
+
+.transaction-card:hover button.copy-button{
+border: 0px solid  #0f3460;
+margin-left: 2px;
+}
+.transaction-card:hover button.copy-button div img{
+  width: 20px;
+  height: 20px;
+}
+.transaction-card:not(:hover) button.copy-button{
+  display: none;
+  
+}
+button.copy-button.copied div.button-area {
+  color: green;
+}
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+.link:hover{
+  text-decoration: underline;
+  z-index: 10; /* Hover above other cards */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: red;
+}
+
+

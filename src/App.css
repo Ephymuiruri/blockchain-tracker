@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)) , url(./transparency.jpg);
+  background-size: cover;
+  font-family: 'Playfair',sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav#HomePage {
+  width: 100%;
+  height: 100px;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed; /* Make the navbar sticky */
+  top: 0; /* Stick it to the top */
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: rgba(0, 0, 0, 0.7); /* Slight background to improve readability */
+  backdrop-filter: blur(5px); /* Adds a blur effect for modern look */
+  padding: 0 20px;
+}
+.logo{
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: "Playfair",sans-serif;
+}
+.logo img{
+  width: 199px;
+  height: 216px;
+  z-index: 1000;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.menu a:hover {
+  border: 1px solid #D83F87;
+  background: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 650px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+.h-text span{
+  letter-spacing: 5px;
+}
+.h-text h1{
+  font-size: 3.5em;
+  font-family: "Playfair Display",sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+}
+.h-text a{
+  text-decoration: none;
+  background: #44318d;
+  padding: 10px 20px;
+  color: #fff;
+  letter-spacing: 5px;
+  transition: 0.4s;
+}
+.h-text a:hover{
+  border: 2px solid indianred;
+  background: transparent;
 }
