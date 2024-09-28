@@ -1,5 +1,7 @@
 
 # Gitcoin Tracker
+## Live Link
+https://gitcointracker.netlify.app/
 
 ## Description
 
@@ -57,7 +59,7 @@ The app will now run on http://localhost:3000.
 ### Basic Navigation:
 Once the app is running, you'll see the homepage with a sticky navigation bar that lets you move between sections (e.g., Home, Data Section, About, Contact).
 ![Home Page](./Home.png)
-
+about
 ## Interacting with Data:
  In the "Data Section", users can filter transfers, approvals, and GTC distribution data. The dashboard updates in real-time, pulling live data from The Graph using Apollo Client.
  ### Data SEction
@@ -152,3 +154,6 @@ Ephy Muiruri Wachira - https://github.com/Ephymuiruri
 ## Project Link
 
 https://github.com/Ephymuiruri/blockchain-tracker
+
+## Live Link
+https://gitcointracker.netlify.app/
